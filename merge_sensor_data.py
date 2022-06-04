@@ -56,7 +56,7 @@ def merge_sensor_data(dir_in, dir_out):
         data_merged.reset_index(inplace=True)
         data_merged.to_csv(dir_out + sub_dir_.split('/')[-1] + '_merged.csv',
                            index=False)
-    print(f'{len(sub_dir_)} folders merged')
+    print(f'{len(sub_dir)} folders merged')
 
 
 if __name__ == '__main__':
